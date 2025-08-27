@@ -4,10 +4,10 @@
 // should have a small gray title 'Contact'
 export default function Contact() {
   return (
-    <nav className="bg-white sticky bottom-0 z-50 pt-6">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="bg-white sticky bottom-0 z-50 pt-6 w-full">
+      <div className="px-4 sm:px-6 lg:px-8 w-full flex flex-col items-center">
         <p className="text-center text-gray-400">Contacts</p>
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-center h-16 w-full">
           {/* Contact Links */}
           <div className="flex space-x-6">
             <a
@@ -16,9 +16,9 @@ export default function Contact() {
               rel="noopener noreferrer"
             >
               <img
-                src="images/LinkedIn_icon.svg"
+                src="resources/LinkedIn_icon.svg"
                 alt="LinkedIn"
-                class="size-10"
+                className="size-10"
               />
             </a>
             <a
@@ -27,16 +27,16 @@ export default function Contact() {
               rel="noopener noreferrer"
             >
               <img
-                src="images/Octicons-mark-github.svg"
+                src="resources/Octicons-mark-github.svg"
                 alt="GitHub"
-                class="size-10"
+                className="size-10"
               />
             </a>
             <a href="mailto:christina.hayoung@gmail.com">
               <img
-                src="images/email.png"
+                src="resources/email.png"
                 alt="Email"
-                class="size-10"
+                className="size-10"
               />
             </a>
           </div>
