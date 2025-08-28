@@ -20,7 +20,7 @@ export default function Home() {
 
       <div className="flex-1 flex justify-center">
         <img
-          src="../../resources/headshot.jpg"
+          src="resources/headshot.jpg"
           alt="Picture of Me"
           className="max-w-xs md:max-w-sm lg:max-w-md rounded-xl shadow-lg"
         />
