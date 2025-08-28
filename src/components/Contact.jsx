@@ -4,7 +4,7 @@
 // should have a small gray title 'Contact'
 export default function Contact() {
   return (
-    <nav className="bg-white sticky bottom-0 z-50 pt-6 w-full">
+    <nav className="bg-white bottom-0 sticky z-50 pt-6">
       <div className="px-4 sm:px-6 lg:px-8 w-full flex flex-col items-center">
         <p className="text-center text-gray-400">Contacts</p>
         <div className="flex items-center justify-center h-16 w-full">
@@ -18,7 +18,7 @@ export default function Contact() {
               <img
                 src="resources/LinkedIn_icon.svg"
                 alt="LinkedIn"
-                className="size-10"
+                className="size-8"
               />
             </a>
             <a
@@ -29,14 +29,14 @@ export default function Contact() {
               <img
                 src="resources/Octicons-mark-github.svg"
                 alt="GitHub"
-                className="size-10"
+                className="size-8"
               />
             </a>
             <a href="mailto:christina.hayoung@gmail.com">
               <img
                 src="resources/email.png"
                 alt="Email"
-                className="size-10"
+                className="size-8"
               />
             </a>
           </div>
