@@ -11,7 +11,7 @@ export default function AboutMe() {
       </div>
       <div className="flex-1 flex justify-center">
         <img
-          src="resources/kirby_shot.jpg"
+          src="../../resources/kirby_shot.jpg"
           alt="Picture of Me"
           className="max-w-xs md:max-w-sm lg:max-w-md rounded-xl shadow-lg"
         />

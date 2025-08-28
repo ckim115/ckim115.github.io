@@ -16,7 +16,7 @@ export default function Contact() {
               rel="noopener noreferrer"
             >
               <img
-                src="resources/LinkedIn_icon.svg"
+                src="../../resources/LinkedIn_icon.svg"
                 alt="LinkedIn"
                 className="size-8"
               />
@@ -27,14 +27,14 @@ export default function Contact() {
               rel="noopener noreferrer"
             >
               <img
-                src="resources/Octicons-mark-github.svg"
+                src="../../resources/Octicons-mark-github.svg"
                 alt="GitHub"
                 className="size-8"
               />
             </a>
             <a href="mailto:christina.hayoung@gmail.com">
               <img
-                src="resources/email.png"
+                src="../../resources/email.png"
                 alt="Email"
                 className="size-8"
               />
