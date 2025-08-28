@@ -1,7 +1,18 @@
-// "Footbar"
-// like navbar, insert link from app page
-// github, linkedin, and email image
-// should have a small gray title 'Contact'
+const contacts = [
+  {
+    ref: "https://www.linkedin.com/in/christina-hayoung-kim/",
+    img: "resources/LinkedIn_icon.svg"
+  }, 
+  { 
+    ref: "https://github.com/ckim115",
+    img: "resources/Octicons-mark-github.svg"
+  }, 
+  {
+    ref: "mailto:christina.hayoung@gmail.com",
+    img: "resources/email.png"
+  }
+];
+
 export default function Contact() {
   return (
     <nav className="bg-white bottom-0 sticky z-50 pt-6">
@@ -10,35 +21,20 @@ export default function Contact() {
         <div className="flex items-center justify-center h-16 w-full">
           {/* Contact Links */}
           <div className="flex space-x-6">
-            <a
-              href="https://www.linkedin.com/in/christina-hayoung-kim/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="resources/LinkedIn_icon.svg"
-                alt="LinkedIn"
-                className="size-8"
-              />
-            </a>
-            <a
-              href="https://github.com/ckim115"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="resources/Octicons-mark-github.svg"
-                alt="GitHub"
-                className="size-8"
-              />
-            </a>
-            <a href="mailto:christina.hayoung@gmail.com">
-              <img
-                src="resources/email.png"
-                alt="Email"
-                className="size-8"
-              />
-            </a>
+            {contacts.map((contact, i) => (
+              <a
+                key={i}
+                href={contact.ref}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={contact.img}
+                  alt={`Contact link ${i}`}
+                  className="size-8"
+                />
+              </a>
+            ))}
           </div>
         </div>
       </div>
